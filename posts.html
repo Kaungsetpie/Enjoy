@@ -60,6 +60,19 @@
     .navbar-brand {
           background-color: transparent !important;
         }
+  .notification-badge {
+            
+            margin-left: 8px;
+            background-color: red;
+            color: red;
+            border-radius: 50%;
+            width: 5px;
+            height: 5px;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
     
       </style>
   </head>
@@ -72,14 +85,14 @@
                         <img src="pictures/story1.jpg" alt="pro" class="rounded-circle" width="80" height="80">
                         <h3>Kaung@</h3>
                         <div class="d-flex" style="padding-left: 7rem;">
-                           <p class="text-white p-2">Following <br> 10</p><hr>
-                           <p class="text-white p-2">Follower <br> 10</p>
+                           <p class="text-dark p-2">Following <br> 10</p><hr>
+                           <p class="text-dark p-2">Follower <br> 10</p>
                         </div>
                     </div><hr>
 
 
                     <ul class="navbar-nav ms-auto p-3">
-                        <li calss="nav-item mx-3 fw-light "><a href="home.html" class="nav-link mb-3 fs-5"><img width="35" height="35" src="https://img.icons8.com/material-rounded/24/home.png" alt="home"/>&nbsp;&nbsp;Home</a></li>
+                        <li calss="nav-item mx-3 fw-light "><a href="home.html" class="nav-link mb-3 fs-5"><img width="35" height="35" src="https://img.icons8.com/material-rounded/24/home.png" alt="home"/>&nbsp;&nbsp;Home<span id="notificationBadge" class="notification-badge">.</span></a></li>
                         <li calss="nav-item mx-3 fw-light "><a href="search.html" class="nav-link mb-3 fs-5"><img width="35" height="35" src="https://img.icons8.com/ios-filled/50/search--v1.png" alt="search--v1"/>&nbsp;&nbsp;Search</a></li>
                         <li calss="nav-item mx-3 fw-light "><a href="upload.html" class="nav-link mb-3 fs-5 "><img width="35" height="35" src="https://img.icons8.com/ios/50/plus--v1.png" alt="plus--v1"/>&nbsp;&nbsp;Post</a></li>
                         <li calss="nav-item mx-3 fw-light "><a href="posts.html" class="nav-link mb-3 fs-5"><img width="35" height="35" src="https://img.icons8.com/material/24/video.png" alt="video"/>&nbsp;&nbsp;Short</a></li>
@@ -119,48 +132,121 @@
                           </form>
                           <a href=""><img width="34" height="34" src="https://img.icons8.com/material-outlined/24/speech-bubble--v1.png" alt="speech-bubble--v1"/></a>
                         </div>
-                        <div class="ps-5">
+                        <div class="ps-md-5 ps-sm-1">
                           <p>Liked by 1M others</p>
                         </div>
                       </div>
-                      <div class="conttainer-fluid mb-3">
+
+                      <div class="conttainer-fluid mb-lg-3">
                         
-                        <div class="d-flex align-items-center p-3">
+                        <div class="d-flex align-items-center p-lg-3 border-primary">
+                          <a href="index.html" class="d-flex nav-link align-items-center">
                           <img src="pictures/story1.jpg" alt="story" width="50" height="50" class="rounded-circle">
                           <p class="text-dark p-3">@jinne</p>
+                          </a>
                         </div>
-                        <div class="ps-5">
+                        <div class="ps-md-5">
                           <img src="pictures/story1.jpg" alt="" class="w-100 card rounded-3">
                         </div>
-                        <div class="ps-5 d-flex align-items-center">
+                        <div class="ps-md-5 ps-sm-1 d-flex align-items-center">
                           <form action="">
                             <button class="btn"><img width="34" height="34" src="https://img.icons8.com/material-outlined/24/like--v1.png" alt="like--v1"/></button>
                           </form>
                           <a href=""><img width="34" height="34" src="https://img.icons8.com/material-outlined/24/speech-bubble--v1.png" alt="speech-bubble--v1"/></a>
                         </div>
-                        <div class="ps-5">
+                        <div class="ps-md-5 ps-sm-1">
                           <p>Liked by 1M others</p>
                         </div>
                       </div>
-                      <div class="conttainer-fluid mb-3">
+
+                      <div class="conttainer-fluid mb-lg-3">
                         
-                        <div class="d-flex align-items-center p-3">
+                        <div class="d-flex align-items-center p-lg-3 border-primary">
+                          <a href="index.html" class="d-flex nav-link align-items-center">
                           <img src="pictures/story1.jpg" alt="story" width="50" height="50" class="rounded-circle">
                           <p class="text-dark p-3">@jinne</p>
+                          </a>
                         </div>
-                        <div class="ps-5">
+                        <div class="ps-md-5">
                           <img src="pictures/story1.jpg" alt="" class="w-100 card rounded-3">
                         </div>
-                        <div class="ps-5 d-flex align-items-center">
+                        <div class="ps-md-5 ps-sm-1 d-flex align-items-center">
                           <form action="">
                             <button class="btn"><img width="34" height="34" src="https://img.icons8.com/material-outlined/24/like--v1.png" alt="like--v1"/></button>
                           </form>
                           <a href=""><img width="34" height="34" src="https://img.icons8.com/material-outlined/24/speech-bubble--v1.png" alt="speech-bubble--v1"/></a>
                         </div>
-                        <div class="ps-5">
+                        <div class="ps-md-5 ps-sm-1">
                           <p>Liked by 1M others</p>
                         </div>
                       </div>
+
+                      <div class="conttainer-fluid mb-lg-3">
+                        
+                        <div class="d-flex align-items-center p-lg-3 border-primary">
+                          <a href="index.html" class="d-flex nav-link align-items-center">
+                          <img src="pictures/story1.jpg" alt="story" width="50" height="50" class="rounded-circle">
+                          <p class="text-dark p-3">@jinne</p>
+                          </a>
+                        </div>
+                        <div class="ps-md-5">
+                          <img src="pictures/story1.jpg" alt="" class="w-100 card rounded-3">
+                        </div>
+                        <div class="ps-md-5 ps-sm-1 d-flex align-items-center">
+                          <form action="">
+                            <button class="btn"><img width="34" height="34" src="https://img.icons8.com/material-outlined/24/like--v1.png" alt="like--v1"/></button>
+                          </form>
+                          <a href=""><img width="34" height="34" src="https://img.icons8.com/material-outlined/24/speech-bubble--v1.png" alt="speech-bubble--v1"/></a>
+                        </div>
+                        <div class="ps-md-5 ps-sm-1">
+                          <p>Liked by 1M others</p>
+                        </div>
+                      </div>
+
+                      <div class="conttainer-fluid mb-lg-3">
+                        
+                        <div class="d-flex align-items-center p-lg-3 border-primary">
+                          <a href="index.html" class="d-flex nav-link align-items-center">
+                          <img src="pictures/story1.jpg" alt="story" width="50" height="50" class="rounded-circle">
+                          <p class="text-dark p-3">@jinne</p>
+                          </a>
+                        </div>
+                        <div class="ps-md-5">
+                          <img src="pictures/story1.jpg" alt="" class="w-100 card rounded-3">
+                        </div>
+                        <div class="ps-md-5 ps-sm-1 d-flex align-items-center">
+                          <form action="">
+                            <button class="btn"><img width="34" height="34" src="https://img.icons8.com/material-outlined/24/like--v1.png" alt="like--v1"/></button>
+                          </form>
+                          <a href=""><img width="34" height="34" src="https://img.icons8.com/material-outlined/24/speech-bubble--v1.png" alt="speech-bubble--v1"/></a>
+                        </div>
+                        <div class="ps-md-5 ps-sm-1">
+                          <p>Liked by 1M others</p>
+                        </div>
+                      </div>
+
+                      <div class="conttainer-fluid mb-lg-3">
+                        
+                        <div class="d-flex align-items-center p-lg-3 border-primary">
+                          <a href="index.html" class="d-flex nav-link align-items-center">
+                          <img src="pictures/story1.jpg" alt="story" width="50" height="50" class="rounded-circle">
+                          <p class="text-dark p-3">@jinne</p>
+                          </a>
+                        </div>
+                        <div class="ps-md-5">
+                          <img src="pictures/story1.jpg" alt="" class="w-100 card rounded-3">
+                        </div>
+                        <div class="ps-md-5 ps-sm-1 d-flex align-items-center">
+                          <form action="">
+                            <button class="btn"><img width="34" height="34" src="https://img.icons8.com/material-outlined/24/like--v1.png" alt="like--v1"/></button>
+                          </form>
+                          <a href=""><img width="34" height="34" src="https://img.icons8.com/material-outlined/24/speech-bubble--v1.png" alt="speech-bubble--v1"/></a>
+                        </div>
+                        <div class="ps-md-5 ps-sm-1">
+                          <p>Liked by 1M others</p>
+                        </div>
+                      </div>
+                      
 
                         
                         
@@ -173,11 +259,11 @@
         </div>
         <div class="d-lg-none d-sm-block fixed-bottom-sm">      
             <div class="d-flex mx-sm-auto max-w-100 justify-content-between m-1">
-                <a href="home.html" class="nav-link mb-3  p-2"><img width="24" height="24" src="https://img.icons8.com/material-rounded/24/home.png" alt="home"/></a></li>
-                <a href="search.html" class="nav-link mb-3  p-2"><img width="24" height="24" src="https://img.icons8.com/ios-filled/50/search--v1.png" alt="search--v1"/></a></li>
-                <a href="posts.html" class="nav-link mb-3  p-2"><img width="24" height="24" src="https://img.icons8.com/ios/50/plus--v1.png" alt="plus--v1"/></a></li>
-                <a href="" class="nav-link mb-3  p-2"><img width="24" height="24" src="https://img.icons8.com/material/24/video.png" alt="video"/></a></li>
-                <a href="profile.html" class="nav-link mb-3  p-2"><img width="24" height="24" src="https://img.icons8.com/fluency-systems-regular/35/user-male-circle--v1.png" alt="user-male-circle--v1"/></a></li>
+                <a href="home.html" class="nav-link mb-1  p-1"><img width="24" height="24" src="https://img.icons8.com/material-rounded/24/home.png" alt="home"/><span id="notificationBadge" class="notification-badge">.</span></a></li>
+                <a href="search.html" class="nav-link mb-1  p-1"><img width="24" height="24" src="https://img.icons8.com/ios-filled/50/search--v1.png" alt="search--v1"/></a></li>
+                <a href="posts.html" class="nav-link mb-1  p-1"><img width="24" height="24" src="https://img.icons8.com/ios/50/plus--v1.png" alt="plus--v1"/></a></li>
+                <a href="" class="nav-link mb-1  p-1"><img width="24" height="24" src="https://img.icons8.com/material/24/video.png" alt="video"/></a></li>
+                <a href="profile.html" class="nav-link mb-1  p-1"><img width="24" height="24" src="https://img.icons8.com/fluency-systems-regular/35/user-male-circle--v1.png" alt="user-male-circle--v1"/></a></li>
             </div>
         </div>
     

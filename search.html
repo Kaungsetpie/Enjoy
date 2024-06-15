@@ -39,6 +39,19 @@
         top: 0;
        left: 0;
       }
+.notification-badge {
+            
+            margin-left: 8px;
+            background-color: red;
+            color: red;
+            border-radius: 50%;
+            width: 5px;
+            height: 5px;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
       
       </style>
   </head>
@@ -51,15 +64,15 @@
                         <img src="pictures/story1.jpg" alt="pro" class="rounded-circle" width="80" height="80">
                         <h3>Kaung@</h3>
                         <div class="d-flex" style="padding-left: 7rem;">
-                           <p class="text-white p-2">Following <br> 10</p><hr>
-                           <p class="text-white p-2">Follower <br> 10</p>
+                           <p class="text-dark p-2">Following <br> 10</p><hr>
+                           <p class="text-dark p-2">Follower <br> 10</p>
                         </div>
                     </div><hr>
 
 
                     <ul class="navbar-nav ms-auto p-3">
                         <li calss="nav-item mx-3 fw-light "><a href="home.html" class="nav-link mb-3 fs-5"><img width="35" height="35" src="https://img.icons8.com/material-rounded/24/home.png" alt="home"/>&nbsp;&nbsp;Home</a></li>
-                        <li calss="nav-item mx-3 fw-light "><a href="" class="nav-link mb-3 fs-5"><img width="35" height="35" src="https://img.icons8.com/ios-filled/50/search--v1.png" alt="search--v1"/>&nbsp;&nbsp;Search</a></li>
+                        <li calss="nav-item mx-3 fw-light "><a href="" class="nav-link mb-3 fs-5"><img width="35" height="35" src="https://img.icons8.com/ios-filled/50/search--v1.png" alt="search--v1"/>&nbsp;&nbsp;Search<span id="notificationBadge" class="notification-badge">.</span></a></li>
                         <li calss="nav-item mx-3 fw-light "><a href="" class="nav-link mb-3 fs-5 "><img width="35" height="35" src="https://img.icons8.com/ios/50/plus--v1.png" alt="plus--v1"/>&nbsp;&nbsp;Post</a></li>
                         <li calss="nav-item mx-3 fw-light "><a href="" class="nav-link mb-3 fs-5"><img width="35" height="35" src="https://img.icons8.com/material/24/video.png" alt="video"/>&nbsp;&nbsp;Short</a></li>
                         <li calss="nav-item mx-3 fw-light "><a href="" class="nav-link mb-3 fs-5"><img width="35" height="35" src="https://img.icons8.com/fluency-systems-regular/35/user-male-circle--v1.png" alt="user-male-circle--v1"/>&nbsp;&nbsp;You</a></li>
@@ -69,9 +82,9 @@
  
                 <div class="w-100">
 
-                  <nav class="navbar navbar-expand fixed-top-custom px-3">
+                  <nav class="navbar navbar-expand fixed-top-custom">
                       
-                      <div class="navbar-collapse">
+                      <div class="navbar-collapse p-lg-3">
                         <div class="container-fluid product-search">
                             <form class="d-flex w-60% p-3 mx-auto">
                               <input class="form-control me-2 text-muted search" type="search" placeholder="Search something.." aria-label="Search">
@@ -82,47 +95,47 @@
                     </nav><hr>
                   
                      <!--Scroll section-->
-                    <div class="right-scroll p-3 col-md-12">
+                    <div class="right-scroll p--md-3 col-md-12">
                       
-                        <div class="p-3">
+                        <div class="p-lg-3">
                             
                             <div class="row">
     
-                                <div class="col-md-4">
+                                <div class="col-md-4 col-sm-3">
                                     <a href="posts.html" class="text-decoration-none">
-                                        <div class="pb-3 border-0 rounded-4 p-3">
+                                        <div class="pb-3 border-0 rounded-4 p-md-3">
                                             <img src="pictures/story1.jpg" class="rounded-3 w-100" alt="">
                                         </div>
                                     </a>
                                 </div>
     
-                                <div class="col-md-4">
+                                <div class="col-md-4 col-sm-3">
                                     <a href="posts.html" class="text-decoration-none">
-                                        <div class="pb-3 border-0 rounded-4 p-3">
+                                        <div class="pb-3 border-0 rounded-4 p-md-3">
                                             <img src="pictures/story1.jpg" class="rounded-3 w-100" alt="">
                                         </div>
                                     </a>
                                 </div>
     
-                                <div class="col-md-4">
+                                <div class="col-md-4 col-sm-3">
                                     <a href="posts.html" class="text-decoration-none">
-                                        <div class="pb-3 border-0 rounded-4 p-3">
+                                        <div class="pb-3 border-0 rounded-4 p-md-3">
                                             <img src="pictures/story1.jpg" class="rounded-3 w-100" alt="">
                                         </div>
                                     </a>
                                 </div>
     
-                                <div class="col-md-4">
+                                <div class="col-md-4 col-sm-3">
                                     <a href="posts.html" class="text-decoration-none">
-                                        <div class="pb-3 border-0 rounded-4 p-3">
+                                        <div class="pb-3 border-0 rounded-4 p-md-3">
                                             <img src="pictures/story1.jpg" class="rounded-3 w-100" alt="">
                                         </div>
                                     </a>
                                 </div>
     
-                                <div class="col-md-4">
+                                <div class="col-md-4 col-sm-3">
                                     <a href="posts.html" class="text-decoration-none">
-                                        <div class="pb-3 border-0 rounded-4 p-3">
+                                        <div class="pb-3 border-0 rounded-4 p-md-3">
                                             <img src="pictures/story1.jpg" class="rounded-3 w-100" alt="">
                                         </div>
                                     </a>
@@ -138,14 +151,13 @@
             </div>
             
         </div>
-        <div class="d-lg-none d-sm block fixed-bottom-sm">
-                
-            <div class="d-flex px-5">
-                <a href="" class="nav-link mb-3  p-2 pe-5"><img width="24" height="24" src="https://img.icons8.com/material-rounded/24/home.png" alt="home"/></a></li>
-                <a href="" class="nav-link mb-3  p-2 pe-5"><img width="24" height="24" src="https://img.icons8.com/ios-filled/50/search--v1.png" alt="search--v1"/></a></li>
-                <a href="" class="nav-link mb-3  p-2 pe-5"><img width="24" height="24" src="https://img.icons8.com/ios/50/plus--v1.png" alt="plus--v1"/></a></li>
-                <a href="" class="nav-link mb-3  p-2 pe-5"><img width="24" height="24" src="https://img.icons8.com/material/24/video.png" alt="video"/></a></li>
-                <a href="" class="nav-link mb-3  p-2 pe-5"><img width="24" height="24" src="https://img.icons8.com/fluency-systems-regular/35/user-male-circle--v1.png" alt="user-male-circle--v1"/></a></li>
+        <div class="d-lg-none d-sm-block fixed-bottom-sm">      
+            <div class="d-flex mx-sm-auto max-w-100 justify-content-between m-1">
+                <a href="home.html" class="nav-link mb-1  p-1"><img width="24" height="24" src="https://img.icons8.com/material-rounded/24/home.png" alt="home"/></a></li>
+                <a href="search.html" class="nav-link mb-1  p-1"><img width="24" height="24" src="https://img.icons8.com/ios-filled/50/search--v1.png" alt="search--v1"/><span id="notificationBadge" class="notification-badge">.</span></a></li>
+                <a href="posts.html" class="nav-link mb-1  p-1"><img width="24" height="24" src="https://img.icons8.com/ios/50/plus--v1.png" alt="plus--v1"/></a></li>
+                <a href="" class="nav-link mb-1  p-1"><img width="24" height="24" src="https://img.icons8.com/material/24/video.png" alt="video"/></a></li>
+                <a href="profile.html" class="nav-link mb-1  p-1"><img width="24" height="24" src="https://img.icons8.com/fluency-systems-regular/35/user-male-circle--v1.png" alt="user-male-circle--v1"/></a></li>
             </div>
         </div>
     

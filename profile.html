@@ -45,7 +45,19 @@
       .navbar-brand {
           background-color: transparent !important;
         }
-    
+.notification-badge {
+            
+            margin-left: 8px;
+            background-color: red;
+            color: red;
+            border-radius: 50%;
+            width: 5px;
+            height: 5px;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
       </style>
   </head>
   <body>
@@ -57,8 +69,8 @@
                         <img src="pictures/story1.jpg" alt="pro" class="rounded-circle" width="80" height="80">
                         <h3>Kaung@</h3>
                         <div class="d-flex" style="padding-left: 7rem;">
-                           <p class="text-white p-2">Following <br> 10</p><hr>
-                           <p class="text-white p-2">Follower <br> 10</p>
+                           <p class="text-dark p-2">Following <br> 10</p><hr>
+                           <p class="text-dark p-2">Follower <br> 10</p>
                         </div>
                     </div><hr>
 
@@ -68,26 +80,26 @@
                         <li calss="nav-item mx-3 fw-light "><a href="" class="nav-link mb-3 fs-5"><img width="35" height="35" src="https://img.icons8.com/ios-filled/50/search--v1.png" alt="search--v1"/>&nbsp;&nbsp;Search</a></li>
                         <li calss="nav-item mx-3 fw-light "><a href="" class="nav-link mb-3 fs-5 "><img width="35" height="35" src="https://img.icons8.com/ios/50/plus--v1.png" alt="plus--v1"/>&nbsp;&nbsp;Post</a></li>
                         <li calss="nav-item mx-3 fw-light "><a href="" class="nav-link mb-3 fs-5"><img width="35" height="35" src="https://img.icons8.com/material/24/video.png" alt="video"/>&nbsp;&nbsp;Short</a></li>
-                        <li calss="nav-item mx-3 fw-light "><a href="" class="nav-link mb-3 fs-5"><img width="35" height="35" src="https://img.icons8.com/fluency-systems-regular/35/user-male-circle--v1.png" alt="user-male-circle--v1"/>&nbsp;&nbsp;You</a></li>
+                        <li calss="nav-item mx-3 fw-light "><a href="" class="nav-link mb-3 fs-5"><img width="35" height="35" src="https://img.icons8.com/fluency-systems-regular/35/user-male-circle--v1.png" alt="user-male-circle--v1"/>&nbsp;&nbsp;You<span id="notificationBadge" class="notification-badge">.</span></a></li>
                     </ul><hr>
                     <p class="p-3 fw-normal fs-5"><a href="" class="nav-link"><img width="50" height="50" src="https://img.icons8.com/ios/50/exit--v1.png" alt="exit--v1"/>&nbsp;&nbsp;Logout</a></p>
                 </div>
  
                 <div class="w-100">
 
-                  <nav class="navbar navbar-expand fixed-top-custom px-3">
-                      <a class="navbar-brand" href="#">Kaungsetpaing</a>
+                  <nav class="navbar navbar-expand fixed-top-custom">
+                      <a class="navbar-brand p-lg-3" href="#">Kaungsetpaing</a>
                       <div class="navbar-collapse">
                         <ul class="navbar-nav ml-auto">
                           <li class="nav-item">
-                            <a class="nav-link" href="#"><img width="35" height="35" src="https://img.icons8.com/ios/50/plus--v1.png" alt="plus--v1"/></a>
+                            <a class="nav-link" href="#"><img width="30" height="30" src="https://img.icons8.com/ios/50/plus--v1.png" alt="plus--v1"/></a>
                           </li>
                           
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <img width="35" height="35" src="https://img.icons8.com/ios/50/menu--v1.png" alt="menu--v1" />
+                                <img width="30" height="30" src="https://img.icons8.com/ios/50/menu--v1.png" alt="menu--v1" />
                             </a>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu w-70">
                               <li><a class="dropdown-item" href="#">Logout</a></li>
                               <li><a class="dropdown-item" href="#">Delete Accout</a></li>
                               <li><hr class="dropdown-divider"></li>
@@ -102,70 +114,72 @@
                     </nav><hr>
                   
                      <!--Scroll section-->
-                    <div class="right-scroll p-3 col-md-12">
+                    <div class="right-scroll p-md-3 col-md-12">
                       <div class="d-flex justify-content-between align-items-center">
-                        <div class="p-3">
+                        <div class="p-md-3">
                             <img src="pictures/story1.jpg" alt="" class="rounded-circle" width="100" height="100">
                             <p>@Kaung</p>
-                            <p>bio</p>
-                            <p>Gender</p>
                         </div>
-                        <div>
+                        <div class="mx-1">
                             <p class="text-muted text-center">10</p>
-                            <p class="fw-bold" style="margin-top: -9px;"> Posts</p>
+                            <p class="fw-bold"> Posts</p>
                         </div>
-                        <div>
+                        <div class="mx-1">
                             <p class="text-muted text-center">10</p>
-                            <p class="fw-bold" style="margin-top: -9px;">Followers</p>
+                            <p class="fw-bold">Followers</p>
                         </div>
-                        <div>
+                        <div class="mx-1">
                             <p class="text-muted text-center">10</p>
-                            <p class="fw-bold" style="margin-top: -9px;">Following</p>
+                            <p class="fw-bold">Following</p>
                         </div>
                       </div>
-                      <div class="ps-5 d-flex">
+                      <div class="p-md-2">
+                        <p>Biio</p>
+                        <p>Gender</p>
+                      </div>
+                      <div class="ps-md-5 d-flex">
                         <a href="#" class="btn btn-primary h-30 w-100 m-2">Edit Profile</a>
                         <a href="#" class="btn btn-primary h-30 w-100 m-2">Share Profile</a>
                       </div><hr>
-                      <div class="p-3">
+                      <div class="p-md-3">
                         <h3>Posts</h3>
                         <div class="row">
 
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-sm-3">
                                 <a href="posts.html" class="text-decoration-none">
-                                    <div class="pb-3 border-0 rounded-4 p-3">
+                                    <div class="pb-3 border-0 rounded-4 p-md-3">
                                         <img src="pictures/story1.jpg" class="rounded-3 w-100" alt="">
                                     </div>
                                 </a>
                             </div>
 
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-sm-3">
                                 <a href="posts.html" class="text-decoration-none">
-                                    <div class="pb-3 border-0 rounded-4 p-3">
+                                    <div class="pb-3 border-0 rounded-4 p-md-3">
                                         <img src="pictures/story1.jpg" class="rounded-3 w-100" alt="">
                                     </div>
                                 </a>
                             </div>
 
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-sm-3">
                                 <a href="posts.html" class="text-decoration-none">
-                                    <div class="pb-3 border-0 rounded-4 p-3">
+                                    <div class="pb-3 border-0 rounded-4 p-md-3">
                                         <img src="pictures/story1.jpg" class="rounded-3 w-100" alt="">
                                     </div>
                                 </a>
                             </div>
 
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-sm-3">
                                 <a href="posts.html" class="text-decoration-none">
-                                    <div class="pb-3 border-0 rounded-4 p-3">
+                                    <div class="pb-3 border-0 rounded-4 p-md-3">
                                         <img src="pictures/story1.jpg" class="rounded-3 w-100" alt="">
                                     </div>
                                 </a>
                             </div>
 
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-sm-3">
                                 <a href="posts.html" class="text-decoration-none">
-                                    <div class="pb-3 border-0 rounded-4 p-3">
+                                    <div class="pb-3 border-0 rounded-4 p-md-3">
                                         <img src="pictures/story1.jpg" class="rounded-3 w-100" alt="">
                                     </div>
                                 </a>
@@ -180,16 +194,15 @@
             </div>
             
         </div>
-        <div class="d-lg-none d-sm block fixed-bottom-sm">
-                
-            <div class="d-flex px-5">
-                <a href="" class="nav-link mb-3  p-2 pe-5"><img width="24" height="24" src="https://img.icons8.com/material-rounded/24/home.png" alt="home"/></a></li>
-                <a href="" class="nav-link mb-3  p-2 pe-5"><img width="24" height="24" src="https://img.icons8.com/ios-filled/50/search--v1.png" alt="search--v1"/></a></li>
-                <a href="posts.html" class="nav-link mb-3  p-2 pe-5"><img width="24" height="24" src="https://img.icons8.com/ios/50/plus--v1.png" alt="plus--v1"/></a></li>
-                <a href="" class="nav-link mb-3  p-2 pe-5"><img width="24" height="24" src="https://img.icons8.com/material/24/video.png" alt="video"/></a></li>
-                <a href="" class="nav-link mb-3  p-2 pe-5"><img width="24" height="24" src="https://img.icons8.com/fluency-systems-regular/35/user-male-circle--v1.png" alt="user-male-circle--v1"/></a></li>
-            </div>
-        </div>
+        <div class="d-lg-none d-sm-block fixed-bottom-sm">      
+          <div class="d-flex mx-sm-auto max-w-100 justify-content-between m-1">
+              <a href="home.html" class="nav-link mb-1  p-1"><img width="24" height="24" src="https://img.icons8.com/material-rounded/24/home.png" alt="home"/></a></li>
+              <a href="search.html" class="nav-link mb-1  p-1"><img width="24" height="24" src="https://img.icons8.com/ios-filled/50/search--v1.png" alt="search--v1"/></a></li>
+              <a href="posts.html" class="nav-link mb-1  p-1"><img width="24" height="24" src="https://img.icons8.com/ios/50/plus--v1.png" alt="plus--v1"/></a></li>
+              <a href="" class="nav-link mb-1  p-1"><img width="24" height="24" src="https://img.icons8.com/material/24/video.png" alt="video"/></a></li>
+              <a href="profile.html" class="nav-link mb-1  p-1"><img width="24" height="24" src="https://img.icons8.com/fluency-systems-regular/35/user-male-circle--v1.png" alt="user-male-circle--v1"/><span id="notificationBadge" class="notification-badge">.</span></a></li>
+          </div>
+      </div>
     
    
 
