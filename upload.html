@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Upload</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .left-fixed {
+          overflow-y: auto; 
+        }
+        .right-scroll {
+          flex-grow: 1; 
+          height: 100vh;
+          overflow-y: auto; 
+         
+        }
+        .right-scroll::-webkit-scrollbar {
+      display: none; 
+        }
+        body{
+            color: #102C57;
+        }
+        .fixed-bottom-sm {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-image: linear-gradient(
+        to bottom right,
+        #8baee3,
+        #FEFAF6
+    );
+        z-index: 10; 
+      }
+      .fixed-top-custom{
+       
+        width: 100%;
+        top: 0;
+       left: 0;
+      }
+      .navbar-brand {
+          background-color: transparent !important;
+        }
+    .caption-box {
+        border: none;
+        outline: none;
+        font-size: 16px;
+        width: 100%;
+        resize: none;
+        overflow: hidden;
+        min-height: 50px; 
+        padding: 10px;
+        word-wrap: break-word; /* Ensures that long words break and wrap to the next line */
+        overflow-wrap: break-word; /* Ensures proper word breaking in modern browsers */
+        background-color: transparent !important;
+    }
+      </style>
+  </head>
+  <body>
+
+        <div class="container-fluid">
+            <div class="d-flex">
+                <div class="left-fixed col-md-3 shadow d-lg-block d-none">
+                    <div class="text-center mt-3">
+                        <img src="pictures/story1.jpg" alt="pro" class="rounded-circle" width="80" height="80">
+                        <h3>Kaung@</h3>
+                        <div class="d-flex" style="padding-left: 7rem;">
+                           <p class="text-white p-2">Following <br> 10</p><hr>
+                           <p class="text-white p-2">Follower <br> 10</p>
+                        </div>
+                    </div><hr>
+
+
+                    <ul class="navbar-nav ms-auto p-3">
+                        <li calss="nav-item mx-3 fw-light "><a href="home.html" class="nav-link mb-3 fs-5"><img width="35" height="35" src="https://img.icons8.com/material-rounded/24/home.png" alt="home"/>&nbsp;&nbsp;Home</a></li>
+                        <li calss="nav-item mx-3 fw-light "><a href="" class="nav-link mb-3 fs-5"><img width="35" height="35" src="https://img.icons8.com/ios-filled/50/search--v1.png" alt="search--v1"/>&nbsp;&nbsp;Search</a></li>
+                        <li calss="nav-item mx-3 fw-light "><a href="" class="nav-link mb-3 fs-5 "><img width="35" height="35" src="https://img.icons8.com/ios/50/plus--v1.png" alt="plus--v1"/>&nbsp;&nbsp;Post</a></li>
+                        <li calss="nav-item mx-3 fw-light "><a href="" class="nav-link mb-3 fs-5"><img width="35" height="35" src="https://img.icons8.com/material/24/video.png" alt="video"/>&nbsp;&nbsp;Short</a></li>
+                        <li calss="nav-item mx-3 fw-light "><a href="" class="nav-link mb-3 fs-5"><img width="35" height="35" src="https://img.icons8.com/fluency-systems-regular/35/user-male-circle--v1.png" alt="user-male-circle--v1"/>&nbsp;&nbsp;You</a></li>
+                    </ul><hr>
+                    <p class="p-3 fw-normal fs-5"><a href="" class="nav-link"><img width="50" height="50" src="https://img.icons8.com/ios/50/exit--v1.png" alt="exit--v1"/>&nbsp;&nbsp;Logout</a></p>
+                </div>
+ 
+                <div class="w-100">
+
+                    <nav class="navbar navbar-expand fixed-top-custom px-3 d-flex justify-content-between align-items-center">
+                        <a class="navbar-brand" href="#"><img width="40" height="40" src="https://img.icons8.com/ios-filled/50/delete-sign--v1.png" alt="delete-sign--v1"/></a>
+                        <div>
+                        <h3 >New Posts</h3>
+                        </div>
+                        <button class="btn nav-link fs-5">Post</button>
+                    </nav><hr>
+                  
+                     <!--Scroll section-->
+                    <div class="right-scroll p-3 col-md-12">
+                      <div class="container-fluid p-3">
+                            <div class="d-flex align-items-center">
+                                <a href="index.html" class="d-flex nav-link">
+                                <img src="pictures/story1.jpg" alt="story" width="60" height="60" class="rounded-circle">
+                                <p class="text-dark p-3">@jinne</p>
+                                </a>
+                            </div>
+                            <textarea class="caption-box" placeholder="What's on your mind?" rows="3"></textarea>                      </div>   
+                     
+                    </div>
+                    <!--Scroll section-->
+
+                </div>
+            </div>
+            
+        </div>
+        <div class="d-lg-none d-sm block fixed-bottom-sm">
+                
+            <div class="d-flex px-5">
+                <a href="" class="nav-link mb-3  p-2 pe-5"><img width="24" height="24" src="https://img.icons8.com/material-rounded/24/home.png" alt="home"/></a></li>
+                <a href="" class="nav-link mb-3  p-2 pe-5"><img width="24" height="24" src="https://img.icons8.com/ios-filled/50/search--v1.png" alt="search--v1"/></a></li>
+                <a href="" class="nav-link mb-3  p-2 pe-5"><img width="24" height="24" src="https://img.icons8.com/ios/50/plus--v1.png" alt="plus--v1"/></a></li>
+                <a href="" class="nav-link mb-3  p-2 pe-5"><img width="24" height="24" src="https://img.icons8.com/material/24/video.png" alt="video"/></a></li>
+                <a href="" class="nav-link mb-3  p-2 pe-5"><img width="24" height="24" src="https://img.icons8.com/fluency-systems-regular/35/user-male-circle--v1.png" alt="user-male-circle--v1"/></a></li>
+            </div>
+        </div>
+    
+   
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    </body>
+</html>

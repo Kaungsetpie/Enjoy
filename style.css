@@ -1,0 +1,66 @@
+body{
+
+    background-image: linear-gradient(
+        to bottom right,
+        #8baee3,
+        #FEFAF6
+    );
+}
+.search
+{
+    border: 2px solid #EADBC8;
+    background: transparent;
+}
+.search::placeholder{
+    color: #EADBC8;
+}
+.search:focus::placeholder{
+    color: #1f4b8d;
+}
+
+.search-btn{
+    background: transparent;
+}
+.nav-item a{
+    text-decoration: none;
+    color: #EADBC8;
+    transition: .5s ease-in-out;
+}
+.nav-item a:hover{
+    color: #1f4b8d;
+    font-weight: 400;
+}
+.navbar-brand{
+    background: #EADBC8;
+}
+
+.btn-outline-primary {
+    border-width: 2px;
+    --bs-btn-font-weight: 600;
+    --bs-btn-color: #EADBC8;
+    --bs-btn-bg: transparent;
+    --bs-btn-border-color: #EADBC8;
+    --bs-btn-border-radius: .5rem;
+    --bs-btn-hover-color: #102C57;
+    --bs-btn-hover-bg: #EADBC8;
+    --bs-btn-hover-border-color: #102C57;
+    --bs-btn-focus-shadow-rgb: rgb(139,112,112);
+    --bs-btn-active-color: #102C57;
+    --bs-btn-active-bg: #EADBC8;
+    --bs-btn-active-border-color: #102C57;
+  }
+.btn-primary {
+    border-width: 2px;
+    --bs-btn-font-weight: 600;
+    --bs-btn-color: #EADBC8;
+    --bs-btn-bg: #102C57;
+    --bs-btn-border-color: #102C57;
+    --bs-btn-border-radius: .5rem;
+    --bs-btn-hover-color: #102C57;
+    --bs-btn-hover-bg: #EADBC8;
+    --bs-btn-hover-border-color: #102C57;
+    --bs-btn-focus-shadow-rgb: rgb(146, 107, 107);
+    --bs-btn-active-color: #EADBC8;
+    --bs-btn-active-bg: #102C57;
+    --bs-btn-active-border-color: #102C57;
+  }
